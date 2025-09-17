@@ -44,6 +44,25 @@ nvm use 19
 
 **2. Clone du code source**
 
+
+Le code source existe en 2 versions allégées ou complète. La différence réside dans la récupération des ressources optionnelles démos et addons.
+
+Ces ressources sont localisées dans des dépôts github différents : 
+
+- https://github.com/mviewer/mviewer-demo
+- https://github.com/mviewer/mviewer-addons
+
+Cette structure permet au mviewer d'une version légère utile pour des développements ou un déploiement sans avoir besoin des démos ou des addons.
+
+Pour cloner l'ensemble du code source, les démos et les addons : 
+
+```
+git clone git clone --recurse-submodules https://github.com/geobretagne/mviewer.git
+cd mviewer
+```
+
+Pour cloner uniquement le coeur mviewer sans les ressources optionnelles :
+
 ```
 git clone https://github.com/geobretagne/mviewer.git
 cd mviewer
